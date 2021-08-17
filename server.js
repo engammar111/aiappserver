@@ -31,7 +31,7 @@ app.get("/", async (req, res) => {
     const user = await User.find()
     res.json(user)
   } catch (error) {
-    res.status(500).json({ "its connected" })
+    res.status(500).json("its connected")
   }
 })
 
